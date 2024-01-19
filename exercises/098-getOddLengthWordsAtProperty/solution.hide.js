@@ -1,6 +1,6 @@
 // Write your function here
 function getOddLengthWordsAtProperty(obj, key) {
-    if(!obj[key] || !Array.isArray(obj[key]) || obj[key].length == 0) {
+    if(!obj[key] || obj[key].length == 0|| !Array.isArray(obj[key]) ) {
         return []
     }
 

@@ -1,6 +1,11 @@
 function getSquaredElementsAtProperty(obj, key) {
     // your code here
-    
+    if(!obj[key] || !Array.isArray(obj[key] || !obj.hasownproperty(key))){
+      return []
+    }
+
+    const squareArray = obj[key].map((elememt) => elememt * elememt )
+    return squareArray
 }
 
 let obj = {
